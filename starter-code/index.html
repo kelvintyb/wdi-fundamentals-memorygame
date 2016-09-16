@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-	
-  <head>
-    <title>Memory Game</title>
-  </head>
-  
-    <nav class="clearfix">
-      <a href="#">Instructions</a>
-      <a href="#">Game</a>
-    </nav>
-    
-    <body>
-    	<h1>Memory Game</h1>
-    	<h2>Instructions</h2>
-    	<p>
-    		Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are         flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
-    	</p>
-    	
-    	<div class="board">
-		<div class="card"></div>
-		<div class="card"></div>
-		<div class="card"></div>
-		<div class="card"></div>
-  	</div>
-  
-  	<footer>
-  		Created with &hearts; by <span class="name">GA</span>
-	</footer>
+<html>
+<head>
+    <!-- meta tags for Bootstrap -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     </body>
+  <title>A Game of Concentration</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <nav class="navbar clearfix">
+    <a href="#instruction" class="navlink">Instructions</a>
+    <a href="#gameboard" class="navlink">Game</a>
+    <a href="#contactbox" class="navlink">Contact</a>
+  </nav>
+  <hr>
+  <header>
+  <h1>Memory Game</h1>
+  <h3>How cruelly sweet are the echoes that start,<br>
+  When memory plays an old tune on the heart.</h3> <!-- perhaps implement json random quote generator from quote api -->
+  
+  <h2 id="instruction">Instructions</h2>
+  <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+  
+  </header>
+
+  <div class="container" id="gameboard">
+    <div class="row">
+      <div class="col-xs-6 card"></div>
+      <div class="col-xs-6 card"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 card"></div>
+      <div class="col-xs-6 card"></div>
+    </div>
+
+  </div>
+
+  <div id="contactbox">
+
+  <h4>Contact Me via:</h4>
+  <a href="mailto:kelvin.tyb@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/kelvintanyb" target="blank">LinkedIn</a>
+  <a href="https://github.com/kelvintyb" target="blank">Github</a>
+  </div>
+
+  <footer>
+    <p>
+      Created with <i class="fa fa-heart" aria-hidden="true"></i> by <span class="name">Kelvin</span>
+
+    </p>
+  </footer>
+
+<script src="main.js"></script>
+</body>
 
 </html>
