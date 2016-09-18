@@ -50,18 +50,34 @@ footer{
 	float:both;
 }
 
+.row{
+	margin: 0 auto;
+	width: 80%;
+}
+
 .card{
 	height:200px;
 	width:150px;
 	border:black solid 1px;
 	border-radius: 10px;
 	background-color:#FF0;
-	margin: 50px;
+	margin: 5%;
+}
+
+img{
+	height:200px;
+	width:150px;
+	margin: 5%;
 }
 
 
 .name{
 	color:#F00;
+}
+
+#scoreboard{
+
+	
 }
 
 .clearfix:after {
@@ -72,3 +88,20 @@ footer{
     clear: both;
     height: 0;
 }
+
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+}
+
+/* 
+for .centered and its child class, refer to 
+http://stackoverflow.com/questions/18153234/center-a-column-using-twitter-bootstrap-3 and 
+http://jsfiddle.net/steyffi/ug4fzcjd/ 
+*/
